@@ -52,6 +52,53 @@ function register_site_menus(){
 add_action('init', 'register_site_menus');
 
 /*================================
+Create Widget Areas
+=================================*/
+function blank_widgets_init(){
+  register_sidebar(array(
+    'name'          => ('Left Header Widget'),
+    'id'            => 'left-header-widget',
+    'description'   => 'Area in left header for content',
+    'before_widget' => '<div class="left-header-widget-container">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<p>',
+    'after_title'   => '</p>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Left Footer Widget'),
+    'id'            => 'left-footer-widget',
+    'description'   => 'Area in left footer for content',
+    'before_widget' => '<div class="left-footer-widget-container">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<p>',
+    'after_title'   => '</p>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Middle Footer Widget'),
+    'id'            => 'middle-footer-widget',
+    'description'   => 'Area in middle footer for content',
+    'before_widget' => '<div class="middle-footer-widget-container">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<p>',
+    'after_title'   => '</p>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Right Footer Widget'),
+    'id'            => 'right-footer-widget',
+    'description'   => 'Area in right footer for content',
+    'before_widget' => '<div class="right-footer-widget-container">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<p>',
+    'after_title'   => '</p>'
+  ));
+}
+
+add_action('widgets_init','blank_widgets_init');
+
+/*================================
 Post Archive Data
 =================================*/
 function post_data(){

@@ -9,3 +9,42 @@ License: GNU General Public License v2 or Later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 Text Domain: photo-portfolio
 */
+
+/* Gallery Page */
+.featured-img.col-md {
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    margin: 0;
+}
+
+.custom-nav-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Fix Sticky Footer */
+.customize-support {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/* Footer Position */
+.site-footer .container {
+    margin: 0;
+}
