@@ -4,15 +4,16 @@
     <div class="row">
 
       <div class="col-sm-1">
-        <?php dynamic_sidebar('left-footer-widget') ?>
+        <?php dynamic_sidebar('left-footer-widget'); ?>
+        <!-- <p><i class="fab fa-facebook"></i></p> -->
       </div>
 
       <div class="col-sm-1">
-        <p>column 2</p>
+        <?php //dynamic_sidebar('middle-footer-widget'); ?>
       </div>
 
       <div class="col-sm-1">
-        <p>column 3</p>
+        <?php //dynamic_sidebar('right-footer-widget'); ?>
       </div>
 
     </div>

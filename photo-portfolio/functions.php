@@ -56,13 +56,13 @@ Create Widget Areas
 =================================*/
 function blank_widgets_init(){
   register_sidebar(array(
-    'name'          => ('Left Header Widget'),
-    'id'            => 'left-header-widget',
-    'description'   => 'Area in left header for content',
-    'before_widget' => '<div class="left-header-widget-container">',
+    'name'          => ('Sidebar Widget'),
+    'id'            => 'sidebar-widget',
+    'description'   => 'Area in sidebar for content',
+    'before_widget' => '<div class="sidebar-widget-container">',
     'after_widget'  => '</div>',
-    'before_title'  => '<p>',
-    'after_title'   => '</p>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
   ));
 
   register_sidebar(array(
@@ -71,28 +71,18 @@ function blank_widgets_init(){
     'description'   => 'Area in left footer for content',
     'before_widget' => '<div class="left-footer-widget-container">',
     'after_widget'  => '</div>',
-    'before_title'  => '<p>',
-    'after_title'   => '</p>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
   ));
 
   register_sidebar(array(
-    'name'          => ('Middle Footer Widget'),
-    'id'            => 'middle-footer-widget',
-    'description'   => 'Area in middle footer for content',
-    'before_widget' => '<div class="middle-footer-widget-container">',
+    'name'          => ('Left Header Widget'),
+    'id'            => 'left-header-widget',
+    'description'   => 'Area in left header for content',
+    'before_widget' => '<div class="left-header-widget-container">',
     'after_widget'  => '</div>',
-    'before_title'  => '<p>',
-    'after_title'   => '</p>'
-  ));
-
-  register_sidebar(array(
-    'name'          => ('Right Footer Widget'),
-    'id'            => 'right-footer-widget',
-    'description'   => 'Area in right footer for content',
-    'before_widget' => '<div class="right-footer-widget-container">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<p>',
-    'after_title'   => '</p>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
   ));
 }
 

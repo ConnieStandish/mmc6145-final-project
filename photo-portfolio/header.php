@@ -3,18 +3,17 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/4f19959d2d.js" crossorigin="anonymous"></script> -->
 
     <title><?php bloginfo('name'); ?></title>
-
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/4f19959d2d.js" crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
   </head>
 
   <body <?php body_class(); ?>>
     <header>
-      <?php dynamic_sidebar('left-header-widget') ?>
+      <?php dynamic_sidebar('left-header-widget'); ?>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 logo-container">
